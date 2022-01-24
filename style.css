@@ -31,7 +31,6 @@ body {
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   background-color: #00494d;
-  width: 30%;
 }
 
 .btn-secondary {
@@ -136,5 +135,12 @@ header {
   background: #26c0ab;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
+}
+
+/*Design para celular*/
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

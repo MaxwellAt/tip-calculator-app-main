@@ -44,7 +44,6 @@ body{
 .btn-primary{
     @include butao($font-weight:700);
     background-color: $um;
-    width: 30%;
 }
 .btn-secondary{
     background-color: transparent;
@@ -104,4 +103,10 @@ header{
 .btn-sucess:disabled{
     background:$sete;
     @include butao($font-weight:700);
+}
+/*Design para celular*/
+@media (max-width:500px){
+    .container{
+        width: 100%;
+    }
 }
