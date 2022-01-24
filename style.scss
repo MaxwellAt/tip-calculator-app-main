@@ -1,0 +1,107 @@
+$um :hsl(183, 100%, 15%);
+$dois: hsl(186, 14%, 43%);
+$tres: hsl(184, 14%, 56%);
+$quatro: hsl(185, 41%, 84%);
+$cinco: hsl(189, 41%, 97%);
+$seis: hsl(0, 0%, 100%);
+$sete: hsl(172, 67%, 45%);
+
+@mixin butao($font-weight:400){
+    font-family: 'Space Mono', monospace;
+    font-weight: $font-weight;
+}
+
+@mixin apos {
+    color:$tres ;
+    padding-left: 90%;
+    @include butao($font-weight:700);
+    font-size: larger;
+}
+
+body{
+    background-color: $quatro;
+}
+.container{
+    background-color: $seis;
+    border-radius: 10px;
+    padding: 30px;
+    width: 50%;
+}
+.col{
+    padding: 30px;
+    border-radius: 10px;
+}
+.caixa1{
+    background-color: $um;
+    @include butao($font-weight:700);
+    background-color: $um;
+    color: $seis;
+}
+.btn{
+    border: none;
+    margin: 2px;
+}
+.btn-primary{
+    @include butao($font-weight:700);
+    background-color: $um;
+    width: 30%;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: $dois;
+    width: 30%;
+    @include butao($font-weight:700)
+}
+.btn-sucess{
+    background-color: transparent;
+    color: $dois;
+}
+p{
+    @include butao($font-weight:400);
+    color: $dois;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    margin: 5% 0%;
+}
+.form-control{
+    background-color: $cinco;
+    border: none;
+}
+.numero{
+    color: $sete;
+    font-size: 200%;
+    line-height: 30px;
+}
+@mixin input-background ($imagem:url(images/icon-dollar.svg)) {
+    background: $imagem;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-position-x: 10px;
+
+}
+.two{
+    @include input-background($imagem:url(images/icon-person.svg));
+
+}
+.one{
+    @include input-background($imagem:url(images/icon-dollar.svg));
+}
+/*efeitos*/
+
+.btn-primary:active,.btn-primary:hover,.btn-primary:focus{
+    background-color: $sete;
+}
+.btn-secondary:active,.btn-secondary:hover,.btn-secondary:focus{
+    background-color: $sete;
+}
+.one::placeholder, .two::placeholder{
+    @include apos();
+}
+.btn-sucess:disabled{
+    background:$sete;
+    @include butao($font-weight:700);
+}

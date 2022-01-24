@@ -1,0 +1,140 @@
+body {
+  background-color: #c5e4e7;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 50%;
+}
+
+.col {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.caixa1 {
+  background-color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background-color: #00494d;
+  color: white;
+}
+
+.btn {
+  border: none;
+  margin: 2px;
+}
+
+.btn-primary {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background-color: #00494d;
+  width: 30%;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #5e7a7d;
+  width: 30%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+.btn-sucess {
+  background-color: transparent;
+  color: #5e7a7d;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  color: #5e7a7d;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  margin: 5% 0%;
+}
+
+.form-control {
+  background-color: #f4fafa;
+  border: none;
+}
+
+.numero {
+  color: #26c0ab;
+  font-size: 200%;
+  line-height: 30px;
+}
+
+.two {
+  background: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 10px;
+}
+
+.one {
+  background: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 10px;
+}
+
+/*efeitos*/
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+  background-color: #26c0ab;
+}
+
+.btn-secondary:active, .btn-secondary:hover, .btn-secondary:focus {
+  background-color: #26c0ab;
+}
+
+.one::-webkit-input-placeholder, .two::-webkit-input-placeholder {
+  color: #7f9c9f;
+  padding-left: 90%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.one:-ms-input-placeholder, .two:-ms-input-placeholder {
+  color: #7f9c9f;
+  padding-left: 90%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.one::-ms-input-placeholder, .two::-ms-input-placeholder {
+  color: #7f9c9f;
+  padding-left: 90%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.one::placeholder, .two::placeholder {
+  color: #7f9c9f;
+  padding-left: 90%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.btn-sucess:disabled {
+  background: #26c0ab;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
