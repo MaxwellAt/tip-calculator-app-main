@@ -112,4 +112,13 @@ header{
     .row{
         flex-direction: column;
     }
+    .btn-primary,.btn-secondary{
+        width: 40%;
+    }
+    .botoes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
