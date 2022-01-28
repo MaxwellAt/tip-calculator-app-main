@@ -16,6 +16,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
 
@@ -27,16 +29,18 @@
 
         <p>Bill</p>
   
-        <input type="number" class="form-control one" placeholder="0" name="" id="">
+        <input type="number" class="form-control one" placeholder="0">
+        <br>
         <p>Select Tip %</p>
         <div class="botoes">
-          <button class="btn btn-primary">5%</button>
-          <button class="btn btn-primary">10%</button>
-          <button class="btn btn-primary">15%</button>
-          <button class="btn btn-primary">25%</button>
-          <button class="btn btn-primary">50%</button>
+          <button id="5" class="btn btn-primary">5%</button>
+          <button id="10" class="btn btn-primary">10%</button>
+          <button id="15" class="btn btn-primary">15%</button>
+          <button id="25" class="btn btn-primary">25%</button>
+          <button id="50" class="btn btn-primary">50%</button>
           <input type="number" class="btn btn-secondary" placeholder="Custom">
         </div>
+        <br>
         <p>Number of People</p>
         <input class="form-control two" placeholder="0" type="number">
       </div>

@@ -31,6 +31,7 @@ body {
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   background-color: #00494d;
+  width: 30%;
 }
 
 .btn-secondary {
@@ -39,6 +40,7 @@ body {
   width: 30%;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
+  text-align: end;
 }
 
 .btn-sucess {
@@ -62,12 +64,7 @@ header {
 }
 
 .logo {
-  margin: 5% 0%;
-}
-
-.form-control {
-  background-color: #f4fafa;
-  border: none;
+  margin: 2% 0%;
 }
 
 .numero {
@@ -81,6 +78,12 @@ header {
   background-repeat: no-repeat;
   background-position: left;
   background-position-x: 10px;
+  background-color: #f4fafa;
+  border: none;
+  text-align: end;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: #00494d;
 }
 
 .one {
@@ -88,15 +91,27 @@ header {
   background-repeat: no-repeat;
   background-position: left;
   background-position-x: 10px;
+  background-color: #f4fafa;
+  border: none;
+  text-align: end;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: #00494d;
 }
 
 /*efeitos*/
 .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
   background-color: #26c0ab;
+  color: #00494d;
 }
 
 .btn-secondary:active, .btn-secondary:hover, .btn-secondary:focus {
-  background-color: #26c0ab;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 0px 0px none;
+          box-shadow: 0px 0px 0px none;
 }
 
 .one::-webkit-input-placeholder, .two::-webkit-input-placeholder {
@@ -135,6 +150,21 @@ header {
   background: #26c0ab;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
+}
+
+.one:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #26c0ab;
+          box-shadow: 0 0 0 0.25rem #26c0ab;
+}
+
+.two:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #26c0ab !important;
+          box-shadow: 0 0 0 0.25rem #26c0ab !important;
 }
 
 /*Design para celular*/

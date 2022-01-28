@@ -44,12 +44,14 @@ body{
 .btn-primary{
     @include butao($font-weight:700);
     background-color: $um;
+    width:30%;
 }
 .btn-secondary{
     background-color: transparent;
     color: $dois;
     width: 30%;
-    @include butao($font-weight:700)
+    @include butao($font-weight:700);
+    text-align: end;
 }
 .btn-sucess{
     background-color: transparent;
@@ -64,11 +66,7 @@ header{
     justify-content: center;
 }
 .logo{
-    margin: 5% 0%;
-}
-.form-control{
-    background-color: $cinco;
-    border: none;
+    margin: 2% 0%;
 }
 .numero{
     color: $sete;
@@ -80,22 +78,31 @@ header{
     background-repeat: no-repeat;
     background-position:left;
     background-position-x: 10px;
-
+    background-color: $cinco;
+    border: none;
+    text-align: end;
+    @include butao($font-weight:700);
+    color: $um;
 }
 .two{
     @include input-background($imagem:url(images/icon-person.svg));
-
 }
 .one{
     @include input-background($imagem:url(images/icon-dollar.svg));
 }
+
+
 /*efeitos*/
 
 .btn-primary:active,.btn-primary:hover,.btn-primary:focus{
     background-color: $sete;
+    color: $um;
 }
 .btn-secondary:active,.btn-secondary:hover,.btn-secondary:focus{
-    background-color: $sete;
+    background-color: $cinco;
+    color: $um;
+    @include butao($font-weight:700);
+    box-shadow: 0px 0px 0px none;
 }
 .one::placeholder, .two::placeholder{
     @include apos();
@@ -104,7 +111,17 @@ header{
     background:$sete;
     @include butao($font-weight:700);
 }
+.one:focus{
+    box-shadow: 0 0 0 0.25rem $sete;
+}
+.two:focus{
+    box-shadow: none;
+}
+.btn-secondary:focus{
+    box-shadow: 0 0 0 0.25rem $sete !important;
+}
 /*Design para celular*/
+
 @media (max-width:500px){
     .container{
         width: 100%;
