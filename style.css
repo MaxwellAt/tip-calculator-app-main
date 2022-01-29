@@ -44,8 +44,11 @@ body {
 }
 
 .btn-sucess {
-  background-color: transparent;
+  background-color: #26c0ab;
   color: #5e7a7d;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: #00494d;
 }
 
 p {
@@ -71,6 +74,21 @@ header {
   color: #26c0ab;
   font-size: 200%;
   line-height: 30px;
+}
+
+.erro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#alerta {
+  color: brown;
+  display: none;
 }
 
 .two {

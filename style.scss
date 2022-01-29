@@ -54,8 +54,10 @@ body{
     text-align: end;
 }
 .btn-sucess{
-    background-color: transparent;
+    background-color: $sete;
     color: $dois;
+    @include butao($font-weight:700);
+    color: $um;
 }
 p{
     @include butao($font-weight:400);
@@ -72,6 +74,15 @@ header{
     color: $sete;
     font-size: 200%;
     line-height: 30px;
+}
+.erro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#alerta{
+    color: brown;
+    display: none;
 }
 @mixin input-background ($imagem:url(images/icon-dollar.svg)) {
     background: $imagem;
