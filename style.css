@@ -118,7 +118,7 @@ header {
 }
 
 /*efeitos*/
-.btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus, .btn-primary:visited {
   background-color: #26c0ab;
   color: #00494d;
 }

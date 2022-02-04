@@ -21,13 +21,14 @@
 <body>
 
   <header>  <img class="logo" src="images/logo.svg"> </header>
+  
   <main class="container">
     <div class="row align-items-center">
 
-      <div class="col">
+      <div class="col" >
 
         <p>Bill</p>
-        <input type="number" class="form-control one" id="entrada1" onblur="b()" placeholder="0">
+        <input maxlength="14" class="form-control one" id="entrada1" step="0.010" type="number" placeholder="0"/>
         <div id="teste"></div>
         <br>
         <p>Select Tip %</p>
@@ -37,25 +38,25 @@
           <button id="15" class="btn btn-primary">15%</button>
           <button id="25" class="btn btn-primary">25%</button>
           <button id="50" class="btn btn-primary">50%</button>
-          <input type="number" class="btn btn-secondary" placeholder="Custom">
+          <input id="opcional" type="number" class="btn btn-secondary" placeholder="Custom">
         </div>
         <br>
         <div class="erro">
           <p>Number of People</p>
           <p id="alerta">Can't Be zero</p>  
         </div>
-        <input class="form-control two" id="input2" onblur="e()" placeholder="0" type="number"/>
+        <input class="form-control two" id="input2" onblur="e()" placeholder="0" maxlength="20"/>
       </div>
 
       <div class="col caixa1">
         <div class="row">
           <div class="col"><h6>Tip Amount</h6><p>/ person</p></div>
-          <div class="col numero">$0.00</div>
+          <div class="col numero" id="gorjeta">$0.00</div>
         </div>
 
         <div class="row">
           <div class="col"><h6>Total</h6><p>/ person</p></div>
-          <div class="col numero">$0.00</div>
+          <div class="col numero" id="totalporpessoa">$0.00</div>
         </div>
         <div class="d-grid gap-2">
           <button class="btn btn-sucess" id="reset" disabled>RESET</button>
